@@ -4,9 +4,9 @@
 <body id="bs">
     <div class="" id="one">
        <div class="parallax-window" data-parallax="scroll" data-image-src="../assets/deskhero.jpg">
-        <header class="hero-section">
+        <header class="hero-section container-fluid">
             <div class="row" id="fixed-menu">
-                <div class="col-sm-12" id="nav-wrapper">
+                <div class="col-sm-12 col-lg-12" id="nav-wrapper">
                     <nav id="menu">
                         <ul id="for-slicknav" >
                             <a data-scroll href="#one"><li class="hvr-underline-reveal">HOME</li></a>
@@ -144,9 +144,9 @@
                    
                    {!! Form::submit('Send', ['class'=>'btn btn-lg btn-block hvr-fade', 'id'=>'submit']); !!}
                 {!! Form::close() !!}
-           </div>
-           
+           </div> 
        </div>
+    </div>
     
     <div class="container-fluid" id="feedback-wrapper">
         <div class="row">
@@ -157,9 +157,9 @@
             </div>
         </div>
     </div>
-    <div>
+       
         <footer class="container-fluid">
-            <div class="row" id="footer-color">
+            <div class="row">
                <div class="col-sm-3 col-md-2 col-md-offset-1 footer-second">
                    <img src="/assets/logo.png" alt="logo" width="200" id="logo-footer">
                    <p class="text-justify padd">We are all about product and corporate photography, web design and web development.</p>
@@ -188,7 +188,7 @@
                    {!! Form::submit('Send', ['class'=>'btn btn-lg btn-block hvr-fade', 'id'=>'newsletter']); !!}
                 {!! Form::close() !!}
                 </div>
-                <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="col-xs-6 col-sm-3 footer-item">
 <!--                    <h4 class="text-right">Contact info</h4>-->
                     <p class="text-right"><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> mvictoriaroberts@gmail.com</p>
                     <p class="text-right"><span><i class="fa fa-phone" aria-hidden="true"></i></span> 021 85 92 92</p>
@@ -210,7 +210,7 @@
                 </div>
             </div>
         </footer>
-    </div>
+ 
      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> 
    <script>
        
@@ -249,7 +249,7 @@
         $('.parallax-window').parallax({imageSrc: '../assets/deskhero.jpg'});
        smoothScroll.init({
        speed: 800, // Integer. How fast to complete the scroll in milliseconds
-	easing: 'easeInOutQuad', // Easing pattern to use
+	   easing: 'easeInOutQuad', // Easing pattern to use
        });
     </script>
   
