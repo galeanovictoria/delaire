@@ -81,7 +81,7 @@
                 <div class="col-xs-6 col-sm-3 footer-item">
                     <h4 class="">Sign up to our newsletter</h4>
                     {!! Form::open(['url' => 'newsletter']) !!}
-                   {!! Form::text('name', null, ['class'=>'form-control', 'required', 'placeholder'=>'Name'])  !!}
+                   {!! Form::text('name', null, ['class'=>'form-control name', 'required', 'placeholder'=>'Name'])  !!}
                    {!! Form::email('email', null, ['class'=>'form-control', 'required', 'placeholder'=>'E-mail']) !!}
                    {!! Form::submit('Send', ['class'=>'btn btn-lg btn-block hvr-fade', 'id'=>'submit']); !!}
                 {!! Form::close() !!}
@@ -115,6 +115,7 @@
      $('#for-slicknav').slicknav({
                 label: '',
             });
+
 </script>
 
 </html>

@@ -9,10 +9,10 @@
     <meta name="author" content="Photographer, Designer, Developer">
     
 <!--    Stylesheets-->
-    <link rel="stylesheet" href="/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/animate.css-master/animate.css">
-    <link rel="stylesheet" href="/css/slicknav.css">
+    <link rel="stylesheet" href="{{ asset('bootstrap')}}/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('css')}}/styles.css">
+    <link rel="stylesheet" href="{{ asset('css')}}/animate.css-master/animate.css">
+    <link rel="stylesheet" href="{{ asset('css')}}/slicknav.css">
     
 <!--    Scripts-->
     <script src="js/jquery-2.2.2.min.js"></script>
