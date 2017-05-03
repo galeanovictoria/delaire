@@ -70,15 +70,15 @@
     <div class="container-fluid" id="three">
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-                <h2 class="left padd">My portfolio</h2>
+                <h2 class="padd" class="center-titles">My portfolio</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-xs-12 col-sm-12">
                <ul id="portfolio_list">
                 @foreach ($projects as $project)
                    <li class="portfolio_item">
-                    <img src="assets/{{$project->proj_img}}" alt="" width="400" class="portfolio_tn">
+                    <img src="assets/{{$project->proj_img}}" alt="portfolio-img" class="portfolio-img" width="400" class="portfolio_tn">
                     <div class="project_info">
                        <div class="project_info_list">
                             <h3 style="border-bottom:1px solid white">{{$project->proj_title}}</h3>
@@ -101,7 +101,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                 <ul id="services-ul">
                     <li class="services-item pulse">
                        <h1><i class="fa fa-paint-brush" aria-hidden="true"></i></h1>
@@ -179,7 +179,7 @@
                             @endif
                     </ul>
                 </div>
-                <div class="col-xs-6 col-sm-3 footer-item">
+                <div class="col-xs-12 col-sm-3 footer-item">
                     <h4 class="">Sign up to our newsletter</h4>
                     {!! Form::open(['url' => 'newsletter']) !!}
                     {{ csrf_field() }}
@@ -188,7 +188,7 @@
                    {!! Form::submit('Send', ['class'=>'btn btn-lg btn-block hvr-fade', 'id'=>'newsletter']); !!}
                 {!! Form::close() !!}
                 </div>
-                <div class="col-xs-6 col-sm-3 footer-item">
+                <div class="col-xs-12 col-sm-3 footer-item">
 <!--                    <h4 class="text-right">Contact info</h4>-->
                     <p class="text-right"><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> mvictoriaroberts@gmail.com</p>
                     <p class="text-right"><span><i class="fa fa-phone" aria-hidden="true"></i></span> 021 85 92 92</p>
@@ -228,7 +228,8 @@
 });
        $('#for-slicknav').slicknav({
                 label: '',
-            });
+                closeOnClick: false,
+        });
        
         $(function() {
             
@@ -246,7 +247,9 @@
 });
         
         
-        $('.parallax-window').parallax({imageSrc: '../assets/deskhero.jpg'});
+        $('.parallax-window').parallax({imageSrc: '../assets/deskhero.jpg',
+                                       position:'left',
+                                       });
        smoothScroll.init({
        speed: 800, // Integer. How fast to complete the scroll in milliseconds
 	   easing: 'easeInOutQuad', // Easing pattern to use

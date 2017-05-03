@@ -78,7 +78,7 @@
                             @endif
                     </ul>
                 </div>
-                <div class="col-xs-6 col-sm-3 footer-item">
+                <div class="col-xs-12 col-sm-3 footer-item">
                     <h4 class="">Sign up to our newsletter</h4>
                     {!! Form::open(['url' => 'newsletter']) !!}
                    {!! Form::text('name', null, ['class'=>'form-control name', 'required', 'placeholder'=>'Name'])  !!}
@@ -114,6 +114,7 @@
 <script>
      $('#for-slicknav').slicknav({
                 label: '',
+                closeOnClick: false,
             });
 
 </script>

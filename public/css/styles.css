@@ -238,7 +238,7 @@
         display: none;
     }
     #bs{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     
     #bs #our-services #services-ul p{
@@ -246,13 +246,12 @@
     padding: 0px 30px 0px 30px;
 }
     #bs #our-services #services-ul li{
+        margin-left: -40px;
         width: 300px;
         height: 300px;
     }
     
     #bs .portfolio_item .project_info{
-    background-color: white;
-    color: black;
     position: absolute;
     top: 0;
     left: 0;
@@ -261,6 +260,7 @@
     opacity: 1;
 }
 }
+
 
 @media (max-width:991px){
     #portraitphoto{
@@ -279,7 +279,26 @@
         z-index: 9999;
         text-align: center;
 	}
+    #bs .portfolio-img{
+     filter: grayscale(100%);
+         filter: brightness(30%);
+}
+    #bs #portfolio_list li{
+        overflow: hidden;
+        color: white;
+        border: 1px solid white;
+        margin-left: -30px;
+       
+        
+    }
     
+    #bs .center-titles{
+        text-align:center;
+    }
+    
+    #bs .tlt .texts{
+        font-size: 0.5rem;
+    }
     
 }
 
@@ -299,8 +318,7 @@
 }
 
 #bs .project_info{
-    background-color: #8B93A8;
-    color: white;
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -310,7 +328,10 @@
 }
 
 
-#bs .portfolio_item:hover .project_info{
+@media (min-width:990px){
+    #bs .portfolio_item:hover .project_info{
+    background-color: #8B93A8;
+    color: white;
     animation-name: portfolio_hvr;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -324,6 +345,7 @@
     to{
         opacity: 1;
     }
+}
 }
 
 #bs .project_info_list{
@@ -342,9 +364,10 @@
 #bs #services-ul{
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: flex-start;
     justify-content: center;
     list-style: none;
+    margin-left: 0;
 }
 
 #bs #services-ul li{
@@ -464,7 +487,6 @@
 
 #bs .margin-left{
     margin-top: 50px;
-/*    margin-left: -50px;*/
 }
 
 #bs #quick-links{

@@ -5,7 +5,7 @@
         <div class="col-sm-10 col-sm-offset-1" style="padding-top:150px;">
 
             <h2>Thank you, {{ $name }}!</h2>
-            <p style="margin-top:50px;">We will get back to you soon!</p>
+            <p>We will get back to you soon!</p>
             <p>Del Aire Team</p>
 
         </div>
