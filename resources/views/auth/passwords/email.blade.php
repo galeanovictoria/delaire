@@ -5,9 +5,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2 padd">
-           <h2>Reset password</h2>
+           <h2 style="padding-bottom:50px;">Reset password</h2>
             <div class="panel panel-default">
-                <div class="panel-body">
+                <div class="panel-body" style="margin-bottom:50px;">
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
@@ -17,7 +17,7 @@
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/password/email') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}" style="padding-top:50px;">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                             <div class="col-md-6">
