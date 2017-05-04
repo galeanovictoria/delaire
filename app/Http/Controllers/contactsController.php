@@ -33,7 +33,7 @@ class contactsController extends Controller
         
         
         Mail::send('auth.emails.contact', $data, function ($m) use ($data) {
-            $m->from('galeano.victoria@gmail.com', 'Your Contact');
+            $m->from('galeano.victoria@gmail.com', 'Del Aire Design & Development');
 
             $m->to($data['email'], $data['name'])->subject('Thank you for contacting us.');
         });
