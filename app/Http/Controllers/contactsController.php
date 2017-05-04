@@ -32,7 +32,7 @@ class contactsController extends Controller
       
         
         
-        Mail::send('emails.contactNote', $data, function ($m) use ($data) {
+        Mail::send('emails/contactNote', $data, function ($m) use ($data) {
             $m->from('galeano.victoria@gmail.com', 'Your Contact');
 
             $m->to($data->email, $data->name)->subject('Thank you for contacting us.');
