@@ -190,7 +190,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-3 footer-item">
 <!--                    <h4 class="text-right">Contact info</h4>-->
-                    <p class="text-right"><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> mvictoriaroberts@gmail.com</p>
+                    <a href="mailto:mvictoriaroberts@gmail.com" target="_top"><p class="text-right"><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> mvictoriaroberts@gmail.com</p></a>
                     <p class="text-right"><span><i class="fa fa-phone" aria-hidden="true"></i></span> 021 85 92 92</p>
                 </div>
             </div>
