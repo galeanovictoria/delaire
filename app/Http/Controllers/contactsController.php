@@ -10,6 +10,8 @@ use App\Contact;
 
 use App\Newsletter;
 
+use Mail;
+
 
 
 class contactsController extends Controller
