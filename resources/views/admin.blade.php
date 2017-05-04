@@ -4,7 +4,7 @@
 @section('content')
 
 
-<div class="container padd">
+<div class="container padd" style="padding-bottom:50px;">
     <div class="row">
         <h2>File upload</h2>
               <div class="col-sm-10 col-sm-offset-1 form-group">

@@ -211,50 +211,8 @@
             </div>
         </footer>
  
-     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> 
-   <script>
-       
-        $(document).scroll(function() {
-       if($(window).scrollTop() > 50){
-
-        $("#menu").addClass("menuClass");
-
-       }else if($(window).scrollTop() < 50){
-
-        $("#menu").removeClass("menuClass");
-
-
-       }
-});
-       $('#for-slicknav').slicknav({
-                label: '',
-                closeOnClick: false,
-        });
-       
-        $(function() {
-            
-            $('.tlt').textillate({
-                minDisplayTime: 1000,
-                callback: function () {
-                    $('.tlt').textillate('out');
-                }
-                                      
-            });
-        });
-        
-        $('.tlt').on('outAnimationEnd.tlt', function () {
-                $('#logo').removeClass('hidden');   
-});
-        
-        
-        $('.parallax-window').parallax({imageSrc: '../assets/deskhero.jpg',
-                                       position:'left',
-                                       });
-       smoothScroll.init({
-       speed: 800, // Integer. How fast to complete the scroll in milliseconds
-	   easing: 'easeInOutQuad', // Easing pattern to use
-       });
-    </script>
+     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+     <script src="js/script.js"></script>
   
 </body>
 

@@ -230,77 +230,6 @@
 }
 
 
-@media (max-width:767px){ 
-    #bs #logo{
-    padding-top: 30%;
-    }
-    #bs .footer-second{
-        display: none;
-    }
-    #bs{
-        font-size: 1.5rem;
-    }
-    
-    #bs #our-services #services-ul p{
-    font-size: 1.5rem;
-    padding: 0px 30px 0px 30px;
-}
-    #bs #our-services #services-ul li{
-        margin-left: -40px;
-        width: 300px;
-        height: 300px;
-    }
-    
-    #bs .portfolio_item .project_info{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-}
-}
-
-
-@media (max-width:991px){
-    #portraitphoto{
-        display: none;
-    }
-       #bs #menu{
-		display:none;
-	}
-	
-	#bs .slicknav_menu {
-		display:block;
-        margin: auto;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 9999;
-        text-align: center;
-	}
-    #bs .portfolio-img{
-     filter: grayscale(100%);
-         filter: brightness(30%);
-}
-    #bs #portfolio_list li{
-        overflow: hidden;
-        color: white;
-        border: 1px solid white;
-        margin-left: -30px;
-       
-        
-    }
-    
-    #bs .center-titles{
-        text-align:center;
-    }
-    
-    #bs .tlt .texts{
-        font-size: 1rem;
-    }
-    
-}
 
 /*Portfolio section*/
 
@@ -325,27 +254,6 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-}
-
-
-@media (min-width:990px){
-    #bs .portfolio_item:hover .project_info{
-    background-color: #8B93A8;
-    color: white;
-    animation-name: portfolio_hvr;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    
-}
-
-@keyframes portfolio_hvr{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
 }
 
 #bs .project_info_list{
@@ -524,11 +432,108 @@
     cursor: pointer;
 }
 
-/*  Admin */
+/* Thank you view */
 
-#bs #admin-footer{
-    width: 100%;
+#bs #thankyouwrapper{
+    padding-bottom: 150px;
+}
+
+
+/* MEDIA QUERIES */
+
+
+
+@media (max-width:767px){ 
+    #bs #logo{
+    padding-top: 30%;
+    }
+    #bs .footer-second{
+        display: none;
+    }
+    #bs{
+        font-size: 1.5rem;
+    }
+    
+    #bs #our-services #services-ul p{
+    font-size: 1.5rem;
+    padding: 0px 30px 0px 30px;
+    }
+    #bs #our-services #services-ul li{
+        margin-left: -40px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    #bs .portfolio_item .project_info{
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    }
+    
+    #bs #thankyouwrapper{
+    padding-bottom: 20px;
+    }
+}
+
+
+@media (max-width:991px){
+    #portraitphoto{
+        display: none;
+    }
+       #bs #menu{
+		display:none;
+	}
+	
+	#bs .slicknav_menu {
+		display:block;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+        text-align: center;
+	}
+    #bs .portfolio-img{
+     filter: grayscale(100%);
+         filter: brightness(30%);
+}
+    #bs #portfolio_list li{
+        overflow: hidden;
+        color: white;
+        border: 1px solid white;
+        margin-left: -30px;
+       
+        
+    }
+    
+    #bs .center-titles{
+        text-align:center;
+    }
+    
+    #bs .tlt .texts{
+        font-size: 1rem;
+    }
+    
+}
+
+@media (min-width:990px){
+    #bs .portfolio_item:hover .project_info{
+    background-color: #8B93A8;
+    color: white;
+    animation-name: portfolio_hvr;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;   
+}
+
+    @keyframes portfolio_hvr{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    }
 }
