@@ -5,7 +5,7 @@
             <h2>Thank you for contacting us.</h2>
             <h3>We will be in contact with you soon!</h3>
             <h3>Cheers,</h3>
-            <img src="../assets/emaillogo.png" alt="logo" width="250">
+            <img src="{{ $message->embed(public_path() . '/assets/emaillogo.png') }}" alt="logo" />
         </div>
 </div>
 
