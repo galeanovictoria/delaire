@@ -86,7 +86,7 @@
                    {!! Form::submit('Send', ['class'=>'btn btn-lg btn-block hvr-fade', 'id'=>'submit']); !!}
                 {!! Form::close() !!}
                 </div>
-                <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="col-xs-12 col-sm-2 footer-item">
 <!--                    <h4 class="text-right">Contact info</h4>-->
                     <p class="text-right"><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> mvictoriaroberts@gmail.com</p>
                     <p class="text-right"><span><i class="fa fa-phone" aria-hidden="true"></i></span> 021 85 92 92</p>

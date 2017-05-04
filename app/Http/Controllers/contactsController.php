@@ -10,6 +10,8 @@ use App\Contact;
 
 use App\Newsletter;
 
+
+
 class contactsController extends Controller
 {
         public function store(Request $request)
@@ -21,6 +23,12 @@ class contactsController extends Controller
         Contact::create($request->all());
 
         $name = $_POST['name'];
+        
+        Mail::send('emails.contactNote', ['user' => $user], function ($m) use ($user) {
+            $m->from('galeano.victoria@gmail.com', 'Your Contact');
+
+            $m->to($user->email, $user->name)->subject('Thank you for contacting us.');
+        });
 
         
         return view('/thankyou', compact('name'));
