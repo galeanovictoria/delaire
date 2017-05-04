@@ -41,7 +41,7 @@
     color: white;
 }
 #bs ul{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2rem;
 }
 #bs .title-padd{
@@ -522,4 +522,13 @@
 #bs #social-media li:hover{
     color: #D1BEC4;
     cursor: pointer;
+}
+
+/*  Admin */
+
+#bs #admin-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }

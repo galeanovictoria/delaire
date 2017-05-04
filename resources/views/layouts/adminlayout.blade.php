@@ -56,7 +56,7 @@
     
 @yield('content')
 
-<div class="">
+<div id="admin-footer">
         <footer class="container-fluid">
             <div class="row" id="footer-color">
                <div class="col-sm-3 col-md-2 col-md-offset-1 footer-second">
