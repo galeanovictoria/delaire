@@ -5,7 +5,7 @@
             <h2 style="padding-top:50px;">Thank you for contacting us!</h2>
             <h3>We will be in contact with you soon.</h3>
             <h3 style="padding-bottom:20px;">Cheers,</h3>
-            <img src="{{ $message->embed(public_path() . '/assets/emaillogo.png') }}" alt="logo" width="250" />
+            <a href="http://we05.galeano.victoria.yoobee.net.nz/"><img src="{{ $message->embed(public_path() . '/assets/emaillogo.png') }}" alt="logo" width="250" /></a>
         </div>
 </div>
 
