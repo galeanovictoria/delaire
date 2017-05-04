@@ -38,7 +38,7 @@ class contactsController extends Controller
             $m->to($data['email'], $data['name'])->subject('Thank you for contacting us.');
         });
 
-        $name = $_POST('name');
+        $name = $_POST['name'];
         return view('/thankyou', compact('name'));
     }
     
