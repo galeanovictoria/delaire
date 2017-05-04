@@ -23,16 +23,22 @@ class contactsController extends Controller
         ]);
        
         Contact::create($request->all());
-
-        $name = $_POST['name'];
         
-        Mail::send('emails.contactNote', ['user' => $user], function ($m) use ($user) {
+        
+        $data = array(
+        'name' => $request->name,
+        'email' => $request->email
+        );
+      
+        
+        
+        Mail::send('emails.contactNote', $data, function ($m) use ($data) {
             $m->from('galeano.victoria@gmail.com', 'Your Contact');
 
-            $m->to($user->email, $user->name)->subject('Thank you for contacting us.');
+            $m->to($data->email, $data->name)->subject('Thank you for contacting us.');
         });
 
-        
+        $name = $_POST('name');
         return view('/thankyou', compact('name'));
     }
     
