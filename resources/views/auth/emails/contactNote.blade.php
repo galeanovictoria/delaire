@@ -1,6 +1,3 @@
-@extends('layouts.layout')
-
-@section('content')
 
 <div class="container-fluid" style="background-color: #8B93A8;">
     <div class="row">
@@ -13,4 +10,3 @@
     </div>
 </div>
 
-@endsection
